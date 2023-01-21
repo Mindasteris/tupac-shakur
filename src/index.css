@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Regular.ttf');
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  @apply mt-20 mb-5 text-3xl md:text-4xl text-center font-bold;
+}
+
+.story p, h2 {
+  @apply max-w-[600px] mx-auto text-lg leading-7;
+}
+
+figure {
+  @apply w-full md:w-1/4 mt-5;
+}
+
+figure img {
+  @apply mx-auto w-[400px] hover:scale-105 transition duration-500;
+}
+
+figcaption {
+  @apply text-center font-bold py-4;
+}
+
+figure span {
+  @apply flex justify-center text-[12px] text-gray-400;
+}
+
+.about p {
+  @apply max-w-[600px] mx-auto text-lg py-10;
+}
+
+form label, input, select, textarea, button {
+  @apply flex justify-center items-center mx-auto my-4 w-[300px] rounded-md;
+}
+
+form label {
+  @apply text-xl font-bold;
+}
+
+form input, select, textarea  {
+  @apply text-black py-1 px-2;
+}
+
+form button {
+  @apply border font-bold py-2 hover:bg-white hover:text-black;
+}
+
+form .error {
+  @apply flex justify-center items-center text-center text-red-600;
+}
+
+form .success {
+  @apply flex justify-center items-center text-center w-[300px] mx-auto rounded-md bg-green-600 text-white font-bold p-2;
+}
