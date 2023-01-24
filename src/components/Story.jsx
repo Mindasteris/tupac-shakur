@@ -123,7 +123,7 @@ const Story = () => {
 
                 {/* Rock and Roll Hall of Fame */}
                 <div className='p-4'>
-                    <h2 className='font-bold text-2xl'>Joining Death Row Records</h2>
+                    <h2 className='font-bold text-2xl'>Hall of Fame</h2>
                     <br />
                     <p>On April 7, 2017, Tupac was inducted into the Rock and Roll Hall of Fame, one of music's highest honors - a worthy inclusion for a rapper hailed by many to have been the greatest of all time.</p>
                 </div>
